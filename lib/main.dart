@@ -1,4 +1,6 @@
+import 'package:f_simple_state_management_template/ui/controllers/color_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:loggy/loggy.dart';
 
 import 'ui/pages/home.dart';
@@ -9,6 +11,8 @@ void main() {
       showColors: true,
     ),
   );
+
+  Get.put(ColorController());
 
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
